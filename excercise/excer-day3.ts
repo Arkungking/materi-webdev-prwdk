@@ -8,8 +8,19 @@ for (let i = 1; i < 10; i++) {
 
 //SOAL 2
 
+let word: string = "madam";
+let palindrome : string = "";
 
+for (let i = word.length-1 ; i >= 0; i--) {
+    palindrome = palindrome + word [i]
+}
 
+if (palindrome === word) {
+        console.log(`${palindrome} is a palindrome`);
+} else {
+    console.log(`${word} is not a palindrome`);
+    
+}
 
 //SOAL 3
 
@@ -40,6 +51,11 @@ console.log(formattedValue);
 
 //SOAl 5
 
+let inputWord: string = "Hello World";
+let search: string = "llo";
+
+const stringSearch: string = inputWord.replace(search, ""); // <--------- this is the method ".replace"
+console.log(stringSearch);
 
 
 //SOAL 6
@@ -51,9 +67,11 @@ let sentence: string = "hello world";
 let sentenceSplit = sentence.split(" ");
 console.log(sentenceSplit);
 
-let lower1 = sentenceSplit[0][0];
-let lower2 = sentenceSplit[1][0];
-
+for (let i = 0; i < sentenceSplit.length; i++) {
+    console.log(i);
+    sentenceSplit[i] = sentenceSplit[i][0].toUpperCase() + sentenceSplit[i].slice(1);
+}
+console.log(sentenceSplit.join(" "));
 
 //SOAL 7
 
