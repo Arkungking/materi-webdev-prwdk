@@ -86,7 +86,7 @@ console.log(square(23));
 // 2. Function Expression
 const square2 = function (angka: number) {
     return angka * angka;
-}:
+};
 // console.log(); <----- cara pengambilan sama aja kayak yang diatas
 
 //===================================== FUNCTION SCOPE ================================================
@@ -169,7 +169,7 @@ function countdown(number: number) {
   }
 }
 
-countdown(6);
+countdown(7);
 
 //========================================== ARROW FUNCTION ================================================
 // shortcut untuk menuliskan Function Expression
